@@ -1,0 +1,334 @@
+/* NAVIGATION TOP MENU */
+
+* {
+  color: white;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  left: -12px;
+}
+
+.texture {
+  position: absolute;
+  top: -10px;
+  margin-left: -10%;
+  width: 120%;
+  height: 150%;
+  background-image: url(./assets/carbon-fibre-big.png);
+  background-repeat: repeat;
+  opacity: 60%;
+  border-top: 3px solid;
+  border-color: red;
+  z-index: -1;
+}
+
+.texture2 {
+  position: absolute;
+  top: -10px;
+  margin-left: -10%;
+  width: 120%;
+  height: 150%;
+  background-image: url(./assets/45-degree-fabric-light.png);
+  background-repeat: repeat;
+  opacity: 60%;
+  border-top: 3px solid;
+  border-color: red;
+  z-index: -1;
+}
+.navbar a {
+  color: red;
+  font-size: 1.8rem;
+}
+
+.navbar a:hover,
+b :active {
+  color: yellow;
+}
+
+.navbar-toggler-icon {
+  color: red;
+  background-color: red;
+}
+
+a.navbar-brand {
+  margin-left: 4%;
+}
+
+a.nav-item.nav-link {
+  margin: 14%;
+}
+
+button.navbar-toggler {
+  color: red;
+}
+
+/* LAYOUT */
+
+.menu {
+  margin-top: 30vh;
+  margin-bottom: 10vh;
+}
+.restos {
+  margin-top: 27vh;
+}
+.pics {
+  margin-top: 27vh;
+}
+.cadre-contact {
+  margin-top: 27vh;
+}
+
+/* INDEX */
+
+.jumbo {
+  position: relative;
+  background-image: url(assets/bg-texture.png);
+  border-bottom-left-radius: 54px;
+  border-bottom-right-radius: 54px;
+  height: 90vh;
+  width: 100vw;
+  border-style: solid;
+  border-color: yellow;
+  border-width: 2px;
+  margin-top: -5px;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.jumbimage {
+  margin-top: 36vh;
+  object-fit: contain;
+  float: left;
+  z-index: 3;
+}
+.periperi {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.jumbitext {
+  margin-top: 30vh;
+  right: 0;
+  margin-right: 5%;
+}
+
+h4 {
+  color: yellow;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  word-spacing: 2%;
+  line-height: 120%;
+  text-align: center;
+}
+
+.jumbotxt {
+  text-align: right;
+  object-fit: cover;
+  box-sizing: border-box;
+  float: right;
+  bottom: -10%;
+}
+
+/* OFFER OF THE WEEK */
+
+.panels {
+  margin-top: auto;
+}
+.panel1 {
+  border-radius: 18px;
+  background-image: url(./assets/bang.webp);
+  background-color: brown;
+  height: fit-content;
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+}
+
+.offer {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.panel2 {
+  border-radius: 18px;
+  background-color: gray;
+  padding: 2%;
+  height: fit-content;
+  text-align: justify;
+  box-sizing: border-box;
+  object-fit: contain;
+  text-align: justify;
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+}
+
+.container-slaw {
+  margin: auto;
+  object-fit: contain;
+}
+
+.slawbox {
+  object-fit: contain;
+}
+
+.slaw {
+  position: relative;
+  text-align: justify;
+}
+.imgslaw {
+  object-fit: contain;
+}
+
+.row-content {
+  justify-self: center;
+}
+
+/* CONTACT */
+
+input.form-control.message {
+  height: 150px;
+  max-width: 100%;
+}
+
+.container-form {
+  padding: 36px;
+}
+
+.form-label {
+  color: red;
+  font-weight: 700;
+}
+
+.form-text {
+  color: red;
+}
+
+.fillform {
+  position: relative;
+  margin-top: 105px;
+}
+.cadre-contact {
+  border-radius: 54px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+  background-color: rgb(58, 58, 58);
+}
+
+/*  PICTURES */
+
+.container {
+  padding: 2rem;
+  margin-top: 200px;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 59rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 1rem;
+  border: solid red 2px;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+.picnav {
+  display: flex;
+  margin-top: 5rem;
+}
+
+/*RESTAURANTS*/
+
+iframe {
+  max-width: 20vw;
+  max-height: 30vh;
+  border-radius: 36px;
+  display: block;
+}
+
+.bxl .dam .ldn {
+  border-style: solid;
+  border: 5px;
+  border-color: red;
+  border-radius: 36px;
+  justify-content: center;
+}
+
+h1 {
+  text-align: left;
+  color: red;
+}
+
+/* MENU */
+
+h5.mb-1 {
+  color: red;
+}
+
+h5.mb-1:active {
+  color: yellow;
+}
+
+p.mb-1 {
+  color: gray;
+}
+
+a.list-group-item {
+  background-color: rgb(31, 34, 34);
+}
+a.list-group-item:hover {
+  background-color: brown;
+  color: white;
+}
+
+a.list-group-item:active {
+  background-color: brown;
+  color: white;
+}
+
+small {
+  color: white;
+}
