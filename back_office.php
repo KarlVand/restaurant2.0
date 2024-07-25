@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 // Delete message if requested
 if (isset($_GET['delete'])) {
     $id = intval($_GET['delete']);
-    $sql = "DELETE FROM contacts WHERE id = ?";
+    $sql = "DELETE FROM contact WHERE id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
     $stmt->execute();

@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Create a prepared statement
     $stmt = $conn->prepare($sql);
-    var_dump($stmt);
+    
     
     gethostbyname($host);
     // Bind parameters to the prepared statement
