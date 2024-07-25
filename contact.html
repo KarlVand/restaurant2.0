@@ -49,85 +49,68 @@
       
 
       <!-- CONTENT -->
+    <form action="./process_form.php" method="post">
 
       <div class="container cadre-contact justify-content-center">
         <div class="row fillform">
           <div class="container-form col-lg-5 col-sm-10 offset-1 mw-100">
+
             <div class="mb-3">
-              <label for="" class="form-label">NAME</label>
+              <label for="name" class="form-label">NAME</label>
               <input
                 type="text"
                 class="form-control"
-                name=""
-                id=""
+                name="name"
+                id="name"
                 aria-describedby="helpId"
                 placeholder=""
               />
             </div>
 
             <div class="mb-3">
-              <label for="" class="form-label">SURNAME</label>
+              <label for="surname" class="form-label">SURNAME</label>
               <input
                 type="text"
                 class="form-control"
-                name=""
-                id=""
+                name="surname"
+                id="surname"
                 aria-describedby="helpId"
                 placeholder=""
               />
             </div>
 
             <div class="mb-3">
-              <label for="" class="form-label">EMAIL</label>
+              <label for="email" class="form-label">EMAIL</label>
               <input
                 type="text"
                 class="form-control"
-                name=""
-                id=""
+                name="email"
+                id="email"
                 aria-describedby="helpId"
                 placeholder=""
               />
             </div>
 
-            <div class="dropdown">
-
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn btn-secondary dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  SUBJECT
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">BRUSSELS</a></li>
-                  <li><a class="dropdown-item" href="#">AMSTERDAM</a></li>
-                  <li><a class="dropdown-item" href="#">LONDON</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">JOBS</a></li>
-                  <li><a class="dropdown-item" href="#">OTHER</a></li>
-                </ul>
-              </div>
-
-
+            <div class="mb-3">
+              <label for="subject" class="form-label">SUBJECT</label>
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                id="subject"
+                aria-describedby="helpId"
+                placeholder=""
+              />
             </div>
-     
             
-            <br />
-            <br />
-            <br />
+            <br/>
+            <br/>
+            <br/>
 
             <div class="mb-3">
-              <label for="" class="form-label">MESSAGE</label>
-              <input
-                type="text"
-                class="form-control message"
-                name=""
-                id=""
-                aria-describedby="helpId"
-                placeholder=""
-              />
+              <label for="message" class="form-label">MESSAGE</label>
+              <textarea class="form-control" id="message" name="message" 
+              rows="5" maxlength="500" required></textarea>
               <small id="helpId" class="form-text text-muted"
                 >Type max 500 characters</small
               >
@@ -136,7 +119,9 @@
             <div class="col-12">
               <button type="submit" class="btn btn-secondary">SUBMIT</button>
             </div>
+
           </div>
+        </form>
 
           <div class="container-img col-lg-6">
             <img src="assets/Message.G02.2k.png" class="mw-100" />
